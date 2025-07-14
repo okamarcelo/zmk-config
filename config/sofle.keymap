@@ -91,7 +91,7 @@
                                   &none           &none           &none           &none            &none           &none  &none &none &none &none
             >;
 
-            sensor-bindings = <&mmv MOVE_UP MOVE_DOWN &mmv MOVE_LEFT MOVE_RIGHT>;
+            // sensor-bindings = <&mmv MOVE_UP MOVE_DOWN &mmv MOVE_LEFT MOVE_RIGHT>;
 
         };
 
