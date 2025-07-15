@@ -16,10 +16,6 @@
 #define RAISE 2
 #define ADJUST 3
 
-    $mt {
-        retro-tap
-    };
-
 / {
 
    // Activate ADJUST layer by pressing raise and lower
@@ -41,7 +37,9 @@
 
     keymap {
         compatible = "zmk,keymap";
-
+    $mt {
+        retro-tap
+    };
         default_layer {
             display-name = "default";
             bindings = <
