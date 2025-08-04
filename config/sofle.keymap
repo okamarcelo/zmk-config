@@ -103,7 +103,7 @@
 &trans     &trans       &trans       &trans       &trans       &kp CLCK                                  &kp PG_DN  &kp LEFT         &kp DOWN   &kp RIGHT &kp END  &trans
 &trans     &kp K_UNDO   &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans        &trans  &kp K_CONTEXT_MENU  &kp K_PREV &kp K_PLAY_PAUSE &kp K_NEXT &trans    &trans   &trans
                         &trans       &trans       &trans       &trans        &trans  &trans              &trans     &trans           &trans     &trans
-            >;i
+            >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
         };
