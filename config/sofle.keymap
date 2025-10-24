@@ -31,10 +31,15 @@
     };
 
     behaviors {
-        rot_mouse: sensor_rotate_kp {
-            compatible = "zmk,behavior-sensor-rotate-var";
-            #sensor-binding-cells = <2>;
-            bindings = <&mmv>, <&mmv>;
+        hor_mouse: hor_mouse {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&mmv MOVE_LEFT>, <&mmv MOVE_RIGHT>;
+        };
+        ver_mouse: ver_mouse {
+            compatible = "zmk,behavior-sensor-rotate";
+            #sensor-binding-cells = <0>;
+            bindings = <&mmv MOVE_DOWN>, <&mmv MOVE_UP>;
         };
         hml: home_row_mod_left {
             compatible = "zmk,behavior-hold-tap";
@@ -112,7 +117,7 @@
                                    &none             &none           &none           &none            &none       &none      &none &none &none &none
             >;
 
-            sensor-bindings = <&rot_mouse MOVE_UP MOVE_DOWN &rot_mouse MOVE_LEFT MOVE_RIGHT>;
+            sensor-bindings = <&hor_mouse &ver_mouse>;
         };
     };
 };
