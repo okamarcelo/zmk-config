@@ -97,11 +97,11 @@
         move_layer {
             display-name = "move";
             bindings = <
-&trans &trans    &trans     &trans   &trans     &trans                 &trans    &trans     &trans           &trans     &trans   &trans
-&trans &trans    &trans     &trans   &trans     &trans                 &kp PG_UP &kp K_BACK &kp UP           &kp K_NEXT &kp HOME &trans
-&trans &trans    &trans     &trans   &trans     &trans                 &kp PG_DN &kp LEFT   &kp DOWN         &kp RIGHT  &kp END  &trans
-&trans &trans    &trans     &trans   &trans     &trans   &trans &trans &trans    &kp C_PREV &kp C_PLAY_PAUSE &kp C_NEXT &trans   &trans
-                 &trans     &trans   &trans     &trans   &trans &trans &trans    &trans     &trans           &trans
+&trans &trans &trans &trans &trans &trans               &trans    &trans     &trans           &trans     &trans   &trans
+&trans &trans &trans &trans &trans &trans               &kp PG_UP &kp K_BACK &kp UP           &kp K_NEXT &kp HOME &trans
+&trans &trans &trans &trans &trans &trans               &kp PG_DN &kp LEFT   &kp DOWN         &kp RIGHT  &kp END  &trans
+&trans &trans &trans &trans &trans &trans &trans &trans &trans    &kp C_PREV &kp C_PLAY_PAUSE &kp C_NEXT &trans   &trans
+              &trans &trans &trans &trans &trans &trans &trans    &trans     &trans           &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
