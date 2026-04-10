@@ -19,8 +19,6 @@
 #define GAME 4
 #define GAM1 5
 #define GAM2 6
-#define CTMNU K_CONTEXT_MENU
-#define RSHFTSM RSHFT SEMI
 
 #define RIGHT_KEYS 6 7 8 9 10 11 /**/ 18 19 20 21 22 23 /**/ 30 31 32 33 34 35 /**/ 43 44 45 46 47 48 49 /**/ 55 56 57 58 59
 #define LEFT_KEYS 0 1 2 3 4 5 /**/ 12 13 14 15 16 17 /**/ 24 25 26 27 28 29 /**/ 36 37 38 39 40 41 42 /**/ 50 51 52 53 54
@@ -83,9 +81,9 @@
 /*|---------------|---------------|---------------|---------------|---------------|---------------|               |               |---------------|---------------|---------------|---------------|---------------|---------------|*/
    &kp F20         &hml LSHFT A    &hml LCTRL S    &hml LGUI D     &hml LALT F     &kp G                                           &kp H           &hmr RALT J     &hmr RGUI K     &hmr RCTRL L    &hmr RSHFT SEMI &kp SQT
 /*|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|*/
-   &none           &kp Z           &kp X           &kp C           &kp V           &kp B           &kp C_MUTE      &kp CTMNU       &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &none   
+   &none           &kp Z           &kp X           &kp C           &kp V           &kp B           &kp C_MUTE      &kp K_CONTEXT_MENU &kp N        &kp M           &kp COMMA       &kp DOT         &kp FSLH        &none   
 /*|               |               |---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|               |               |*/
-                                   &none           &none           &none           &mo FUNC        &kp SPACE       &kp RET         &mo MOVE        &kp CTMNU       &none           &none
+                                   &none           &none           &none           &mo FUNC        &kp SPACE       &kp RET         &mo MOVE        &kp K_CONTEXT_MENU &none        &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
