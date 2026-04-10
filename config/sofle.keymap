@@ -14,7 +14,7 @@
 
 #define MAIN 0
 #define FUNC 1
-#define MOVE 2
+#define NAV 2
 #define SET 3
 //#define GAME 4
 //#define GAM1 5
@@ -22,13 +22,13 @@
 
 #define RIGHT_KEYS 6 7 8 9 10 11 /**/ 18 19 20 21 22 23 /**/ 30 31 32 33 34 35 /**/ 43 44 45 46 47 48 49 /**/ 55 56 57 58 59
 #define LEFT_KEYS 0 1 2 3 4 5 /**/ 12 13 14 15 16 17 /**/ 24 25 26 27 28 29 /**/ 36 37 38 39 40 41 42 /**/ 50 51 52 53 54
-{
+/ {
 
    // Activate ADJUST layer by pressing raise and lower
     conditional_layers {
         compatible = "zmk,conditional-layers";
         set_layer {
-            if-layers = <FUNC MOVE>;
+            if-layers = <FUNC NAV>;
             then-layer = <SET>;
         };
     };
@@ -83,7 +83,7 @@
 /*|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|*/
    &none           &kp Z           &kp X           &kp C           &kp V           &kp B           &kp C_MUTE      &none           &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &none   
 /*|               |               |---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|               |               |*/
-                                   &none           &none           &none           &mo FUNC        &kp SPACE       &kp RET         &mo MOVE        &none          &none            &kp K_CONTEXT_MENU
+                                   &none           &none           &none           &mo FUNC        &kp SPACE       &kp RET         &mo NAV         &none          &none            &kp K_CONTEXT_MENU
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -135,7 +135,7 @@
 /*|---------------|---------------|---------------|---------------|---------------|---------------|               |               |---------------|---------------|---------------|---------------|---------------|---------------|*/
    &bl BL_TOG      &bl BL_ON       &bl BL_OFF      &bl BL_INC      &bl BL_DEC      &none                                           &none           &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT &none           &none
 /*|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|*/
-   &none           &nones          &none           &none           &none           &none           &none           &bt BT_CLR      &none           &none           &none           &none           &none           &none
+   &none           &none           &none           &none           &none           &none           &none           &bt BT_CLR      &none           &none           &none           &none           &none           &none
 /*|               |               |---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|---------------|               |               |*/
                                    &none           &none           &none           &none           &none           &none           &none           &none           &none           &none
             >;
